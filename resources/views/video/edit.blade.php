@@ -8,7 +8,7 @@
                     <div class="panel-heading">Edit video "{{ $video->title }}"</div>
 
                     <div class="panel-body">
-                        <form action="/videos/{{ $video->uid }}" method="post">
+                        <form action="/videos/{{ $video->uid }}" method="post" class="videoDetailsEdit">
 
                             <div class="form-group {{ $errors->has('title') ? 'has-error' : ''}}">
                                 <label for="title">Title</label>

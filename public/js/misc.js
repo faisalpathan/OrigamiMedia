@@ -40,4 +40,14 @@ $(document).ready(function() {
               }, 1800);              
         });
 
+        $(".videoDetailsEdit").on("submit" ,function(e2) {
+              e2.preventDefault();
+              var form = this;
+              swal("Edited Successfully!", "Your Video Details are updated!", "success")
+              
+              setTimeout(function () {
+                  form.submit();
+              }, 1800);              
+        });
+
 });
