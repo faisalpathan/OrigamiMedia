@@ -61,7 +61,36 @@
             }
 
             .m-b-md {
-                margin-bottom: 30px;
+                animation: type 2s steps(13), blink 1s infinite alternate;
+                overflow: hidden;
+                white-space: nowrap;
+                width: 11ch;
+                border-right: 3px solid;
+            }
+            .fadeIn {
+                animation: fadeIn 2s;
+            }
+            .wait-2s {
+
+                animation-delay: 2s;
+                animation-fill-mode: both;
+            }
+
+            @keyframes type {
+                from {
+                    width: 0;
+                }
+            }
+
+            @keyframes blink {
+                50% {
+                    border-color: transparent;
+                }
+            }
+
+            @keyframes fadeIn {
+                from { opacity: 0;  }
+                to { opacity: 1; }
             }
         </style>
     </head>
@@ -80,16 +109,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Origami Media
                 </div>
+                <h3 class="fadeIn wait-2s">DBIT NPL</h3>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+               
             </div>
         </div>
     </body>

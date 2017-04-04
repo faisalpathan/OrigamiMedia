@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+<style type="text/css">
+    #slug {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+</style>
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2">

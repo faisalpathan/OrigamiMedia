@@ -23,7 +23,8 @@ class ChannelSettingsController extends Controller
 
     	return view('channel.settings.edit', [ 
     		
-    		'channel' => $channel 
+    		'channel' => $channel ,
+            'pagetype' => 'channel'
 
     		]); 
     }

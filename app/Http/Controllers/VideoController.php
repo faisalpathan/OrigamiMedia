@@ -35,6 +35,7 @@ class VideoController extends Controller
             return view('video.index',[
 
                    'videos' => $videos,
+                   'pagetype' => 'video'
 
                 ]);
 

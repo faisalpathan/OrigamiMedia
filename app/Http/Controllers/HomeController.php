@@ -32,6 +32,7 @@ class HomeController extends Controller
         return view('home',[
 
             'subscriptionVideos' => $users->videosFromSubscriptions($request->user()), 
+            'pagetype' => 'dashboard'
 
             ]);
     }

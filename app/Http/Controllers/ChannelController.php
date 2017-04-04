@@ -19,6 +19,7 @@ class ChannelController extends Controller
 
     		'videos' => $channel->videos()->visible()->latestFirst()->paginate(5),
 
+    		'pagetype' => 'channel'
 
 
     		]);

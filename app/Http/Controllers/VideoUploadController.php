@@ -12,7 +12,7 @@ class VideoUploadController extends Controller
 {
     public function index()
     {
-    	return view('video.upload');
+    	return view('video.upload',['pagetype' => 'upload']);
     }
 
      public function store(Request $request)
