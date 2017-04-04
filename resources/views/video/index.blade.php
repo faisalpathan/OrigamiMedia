@@ -32,7 +32,7 @@
                                                         <a href="/videos/{{ $video->uid }}/edit" class="btn btn-info">Edit</a>
 
                                                         <button type="submit" 
-                                                        class="btn btn-danger delete">Delete</button>
+                                                        class="btn btn-danger">Delete</button>
                                                         {{ csrf_field() }}
                                                         {{ method_field('DELETE') }}
                                                     </form>
@@ -55,27 +55,4 @@
             </div>
         </div>
     </div>
-<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
-<script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous"></script>
-  <script src="js/sweetalert.min.js"></script>
-    <script>
-    $('.myForm').on('submit', function(e){
-        e.preventDefault();
-  swal({   
-    title: "Are you sure?",
-    text: "You will not be able to recover this lorem ipsum!",         
-    type: "warning",   
-    showCancelButton: true,   
-    confirmButtonColor: "#DD6B55",
-    confirmButtonText: "Yes, delete it!", 
-    closeOnConfirm: false 
-  }, 
-       function(){   
-    $(this).submit();
-  });
-})
-    </script>
 @endsection
