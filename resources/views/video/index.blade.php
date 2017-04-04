@@ -33,6 +33,7 @@
 
                                                         <button type="submit" 
                                                         class="btn btn-danger">Delete</button>
+
                                                         {{ csrf_field() }}
                                                         {{ method_field('DELETE') }}
                                                     </form>

@@ -54,7 +54,7 @@ class VideoController extends Controller
 
         $this->authorize('delete',$video);
 
-        dd($video->title);
+        //dd($video->title);
 
         $video->delete();
 
