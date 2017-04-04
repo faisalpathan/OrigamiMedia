@@ -53,9 +53,9 @@
         <script 
           src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js">   
         </script>
-        <script type="text/javascript" src="js/sweetalert.min.js"></script>
+        <script type="text/javascript" src="/js/sweetalert.min.js"></script>
         <script 
-          type="text/javascript" src="js/misc.js"> 
+          type="text/javascript" src="/js/misc.js"> 
         </script>
 
 </html>

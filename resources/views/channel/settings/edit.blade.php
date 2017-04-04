@@ -9,7 +9,7 @@
 
                     <div class="panel-body">
                         
-                    <form action="/channel/{{ $channel->slug }}/edit" method="POST" enctype="multipart/form-data">
+                    <form action="/channel/{{ $channel->slug }}/edit" method="POST" enctype="multipart/form-data" class="editChannelDetails">
                     
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -56,13 +56,14 @@
                                     @endif
                         </div>
 
+                        <label for="image">Channel Image</label>
                          <div class="form-group">
 
                                 {{-- <label for="image">Channel Image</label> --}}
                                 {{-- <input type="file" name="image" id="image"> --}}
                                 <div class="fileinput fileinput-new" data-provides="fileinput">
-                                <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
-                                <div>
+                                <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 150px; height: 120px;"></div>
+                                <div><br/>
                                 <span class="btn btn-default btn-file">
                                 <span class="fileinput-new">Select Channel image</span>
                                 <span class="fileinput-exists">Change</span>
